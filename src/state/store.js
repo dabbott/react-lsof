@@ -2,11 +2,11 @@ import { createStore, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-import { reducer as example } from './example'
+import { reducer as files } from './files'
 
 const store = createStore(
   combineReducers({
-    example,
+    files,
   }),
   undefined,
   composeWithDevTools(

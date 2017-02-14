@@ -19,7 +19,10 @@ const render = () => {
   )
 }
 
+Perf.start()
 render()
+Perf.stop()
+Perf.printInclusive()
 
 if (module.hot) {
   module.hot.accept('./App', render)
